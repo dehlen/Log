@@ -1,2 +1,15 @@
-- name: Swift Doc
-  uses: SwiftDocOrg/swift-doc@0.0.1
+name: Documentation
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Generate Documentation
+        uses: SwiftDocOrg/swift-doc@master
+        with:
+          inputs: "Source"
+          output: "Documentation"
