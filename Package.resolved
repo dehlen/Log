@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Atomic",
+        "repositoryURL": "https://github.com/dehlen/Atomic.git",
+        "state": {
+          "branch": "master",
+          "revision": "2b26e7978697fd6ba2632a356385cdbd5df09479",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
