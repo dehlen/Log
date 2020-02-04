@@ -1,6 +1,8 @@
 # Log
 <img src="https://img.shields.io/badge/supports-Swift%20Package%20Manager-green.svg">
 
+![Documentation](https://github.com/dehlen/Log/workflows/Documentation/badge.svg)
+
 A fast & simple, yet powerful & flexible logging framework for Mac and iOS.
 
 ## Installation
