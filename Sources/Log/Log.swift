@@ -83,10 +83,10 @@ extension Log {
     /// with the format string: `"$DHH:mm:ss.SSS$d $C$L$c $N.$F:$l - [Log] $M"`.
     ///
     /// Set to a `Log.DummyLogger` instance to disable logging from the framework, or to the `Logger` of your choice to
-    /// easily include Alicerce's logs into to your own logs.
+    /// easily include Log's logs into to your own logs.
     ///
     /// - Warning: This variable is **not** thread safe (for performance reasons). If you wish to customize its value
-    /// please do so just once on app launch, or before using any of Alicerce's components.
+    /// please do so just once on app launch, or before using any of Log's components.
     public static var internalLogger: Logger = {
 
         let format = "$DHH:mm:ss.SSS$d $C$L$c $N.$F:$l - [Log] $M"

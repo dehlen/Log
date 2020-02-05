@@ -25,7 +25,7 @@ class FileLogDestinationTestCase: XCTestCase {
         try? FileManager.default.removeItem(at: logfileURL)
 
         fileManager = MockFileManager()
-        queue = Log.Queue(label: "com.mindera.alicerce.FileLogDestinationTestCase")
+        queue = Log.Queue(label: "com.davidehlen.Log.FileLogDestinationTestCase")
         destination = FileLogDestination(formatter: formatter,
                                          fileURL: logfileURL,
                                          fileManager: fileManager,

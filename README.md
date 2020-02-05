@@ -3,7 +3,7 @@
 
 ![Documentation](https://github.com/dehlen/Log/workflows/Documentation/badge.svg)
 
-A fast & simple, yet powerful & flexible logging framework for Mac and iOS.
+A simple and extensible logging framework for macOS and iOS.
 
 ## Installation
 
@@ -17,11 +17,6 @@ To remove the dependency, select the project and open Swift Packages (which is n
 ## Documentation
 The documentation is generated thanks to [swift-doc](https://github.com/SwiftDocOrg/swift-doc).
 You can find the latest version here: [Documentation](./Documentation).
-
-## Usage
-```swift
-
-```
 
 ## License
 The MIT License
