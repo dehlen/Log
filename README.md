@@ -1,5 +1,6 @@
 # Log
 <img src="https://img.shields.io/badge/supports-Swift%20Package%20Manager-green.svg">
+<img src="./docs/badge.svg">
 
 A simple and extensible logging framework for macOS and iOS.
 
