@@ -1,8 +1,6 @@
 # Log
 <img src="https://img.shields.io/badge/supports-Swift%20Package%20Manager-green.svg">
 
-![Documentation](https://github.com/dehlen/Log/workflows/Documentation/badge.svg)
-
 A simple and extensible logging framework for macOS and iOS.
 
 ## Installation
@@ -14,9 +12,28 @@ If you are using Xcode 11 or higher, go to File / Swift Packages / Add Package D
 
 To remove the dependency, select the project and open Swift Packages (which is next to Build Settings). You can add and remove packages from this tab.
 
+## Usage
+
+> Create loggers that conform to `LogStore` and add to `LogProvider` (console and `os_log` are included):
+```swift
+let log: LogProviderType = LogProvider(
+    stores: [
+        LogConsoleStore(minLevel: .debug),
+        LogOSStore(
+            minLevel: .warning,
+            subsystem: "com.davidehlen.Log",
+            category: "Application"
+        ),
+        MyCustomLogger()
+    ]
+)
+
+log.error("There was an error.")
+```
+
 ## Documentation
-The documentation is generated thanks to [swift-doc](https://github.com/SwiftDocOrg/swift-doc).
-You can find the latest version here: [Documentation](./Documentation).
+The documentation is generated thanks to [jazzy](https://github.com/realm/jazzy).
+You can find the latest version here: [Documentation](./docs).
 
 ## License
 The MIT License

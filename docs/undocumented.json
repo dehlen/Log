@@ -1,0 +1,124 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 4,
+      "symbol": "LogAPI",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 6,
+      "symbol": "LogStore",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 33,
+      "symbol": "LogStore",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 43,
+      "symbol": "LogProviderType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 111,
+      "symbol": "LogProviderType",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 136,
+      "symbol": "LogAPI",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 137,
+      "symbol": "LogAPI.Level",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 138,
+      "symbol": "LogAPI.Level.verbose",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 139,
+      "symbol": "LogAPI.Level.debug",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 140,
+      "symbol": "LogAPI.Level.info",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 141,
+      "symbol": "LogAPI.Level.warning",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogAPI.swift",
+      "line": 142,
+      "symbol": "LogAPI.Level.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogProvider.swift",
+      "line": 3,
+      "symbol": "LogProvider",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogProvider.swift",
+      "line": 6,
+      "symbol": "LogProvider.init(stores:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/LogProvider.swift",
+      "line": 11,
+      "symbol": "LogProvider",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/Stores/LogConsoleStore.swift",
+      "line": 7,
+      "symbol": "LogConsoleStore.init(minLevel:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/d0283356/Downloads/Libraries/Log/Sources/Log/Stores/LogOSStore.swift",
+      "line": 11,
+      "symbol": "LogOSStore.init(minLevel:subsystem:category:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/d0283356/Downloads/Libraries/Log"
+}

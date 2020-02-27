@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Log  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Log  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Log Docs</a> (67% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Log Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Log  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/LogAPI.html">LogAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/LogAPI/Level.html">– Level</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/DateFormatter.html">DateFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Locale.html">Locale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/String/StringInterpolation.html">– StringInterpolation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/TimeZone.html">TimeZone</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/LogProviderType.html">LogProviderType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/LogStore.html">LogStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/LogConsoleStore.html">LogConsoleStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LogOSStore.html">LogOSStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LogProvider.html">LogProvider</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='log' class='heading'>Log</h1>
+
+<p><img src="https://img.shields.io/badge/supports-Swift%20Package%20Manager-green.svg"></p>
+
+<p><img src="https://github.com/dehlen/Log/workflows/Documentation/badge.svg" alt="Documentation"></p>
+
+<p>A simple and extensible logging framework for macOS and iOS.</p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>Currently only Swift Package Manager is supported. 
+Swift Package Manager is a dependency manager built into Xcode.</p>
+
+<p>If you are using Xcode 11 or higher, go to File / Swift Packages / Add Package Dependency&hellip; and enter package repository URL <a href="https://github.com/dehlen/Log.git">https://github.com/dehlen/Log.git</a>, then follow the instructions.</p>
+
+<p>To remove the dependency, select the project and open Swift Packages (which is next to Build Settings). You can add and remove packages from this tab.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<blockquote>
+<p>Create loggers that conform to <code><a href="Protocols/LogStore.html">LogStore</a></code> and add to <code><a href="Structs/LogProvider.html">LogProvider</a></code> (console and <code>os_log</code> are included):</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">log</span><span class="p">:</span> <span class="kt">LogProviderType</span> <span class="o">=</span> <span class="kt">LogProvider</span><span class="p">(</span>
+    <span class="nv">stores</span><span class="p">:</span> <span class="p">[</span>
+        <span class="kt">LogConsoleStore</span><span class="p">(</span><span class="nv">minLevel</span><span class="p">:</span> <span class="o">.</span><span class="n">debug</span><span class="p">),</span>
+        <span class="kt">LogOSStore</span><span class="p">(</span>
+            <span class="nv">minLevel</span><span class="p">:</span> <span class="o">.</span><span class="n">warning</span><span class="p">,</span>
+            <span class="nv">subsystem</span><span class="p">:</span> <span class="s">"com.davidehlen.Log"</span><span class="p">,</span>
+            <span class="nv">category</span><span class="p">:</span> <span class="s">"Application"</span>
+        <span class="p">),</span>
+        <span class="kt">MyCustomLogger</span><span class="p">()</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</code></pre>
+</blockquote>
+
+<p>log.error(&ldquo;There was an error.&rdquo;)</p>
+<pre class="highlight plaintext"><code>
+## Documentation
+The documentation is generated thanks to [swift-doc](https://github.com/SwiftDocOrg/swift-doc).
+You can find the latest version here: [Documentation](./Documentation).
+
+## License
+The MIT License
+
+Copyright (c) 2020 David Ehlen
+
+See LICENSE file
+
+</code></pre>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-02-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
