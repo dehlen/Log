@@ -33,6 +33,7 @@ log.error("There was an error.")
 
 ## Documentation
 The documentation is generated thanks to [jazzy](https://github.com/realm/jazzy).
+
 You can find the latest version here: [Documentation](./docs).
 
 ## License
